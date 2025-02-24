@@ -112,4 +112,41 @@ hr.sysHR {
 
 #upload_voice:hover {
     background-color: #357abd;
+}
+
+.inline-drawer {
+    margin-bottom: 15px;
+}
+
+.inline-drawer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.inline-drawer-icon {
+    transition: transform 0.3s ease;
+}
+
+.inline-drawer-icon.down {
+    transform: rotate(180deg);
+}
+
+.inline-drawer-content {
+    display: none;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 } 
