@@ -1,33 +1,40 @@
 # SillyTavern Extension Example
 
-*Provide a brief description of how your extension works, what problem it aims to solve.*
+这是一个用于 SillyTavern 的扩展，旨在提供生图和语音功能（TTS）。该扩展允许用户通过简单的设置生成图像和语音，提升用户体验。
 
-## Features
+## 特性
 
-*Describe some of the main selling points of your extension.*
+- **生图功能**：用户可以输入 URL 和 API Key，生成图像并自定义文本截取设置。
+- **语音功能（TTS）**：用户可以选择音色，上传音频文件，并自定义播放速度和音量。
+- **本地保存**：所有设置（包括 URL、API Key、模型选择等）都会保存在本地，下次启动时无需重新输入。
 
-## Installation and Usage
+## 安装和使用
 
-### Installation
+### 安装
 
-*In most cases, this should just be using ST's inbuilt extension installer.* 
+1. 在 SillyTavern 中，使用内置的扩展安装程序。
+2. 确保将此扩展的文件（`example.html`, `index.js`, `style.css`, `manifest.json`）放置在正确的扩展目录中。
 
-### Usage
+### 使用
 
-*Explain how to use this extension.*
+1. 打开 SillyTavern，进入扩展设置。
+2. 找到“生图功能设置”部分，输入 URL 和 API Key，选择模型并保存。
+3. 在“语音功能设置”部分，输入 URL 和 API Key，选择音色并保存。
+4. 根据需要调整其他设置，如播放速度和音量。
+5. 点击“连接”按钮以测试设置。
 
-## Prerequisites
+## 先决条件
 
-*Specify the version of ST necessary here.*
+- 确保您使用的 SillyTavern 版本支持扩展功能。
 
-## Support and Contributions
+## 支持和贡献
 
-*Where should someone ask for support?*
+如需支持，请在 SillyTavern 的社区论坛中提问，或通过以下方式联系我：
 
-*Consider including your own contact info for help/questions.*
+- **邮箱**: your_email@example.com
 
-*How can people help add to this extension?*
+欢迎任何形式的贡献，您可以通过提交问题或拉取请求来帮助改进此扩展。
 
-## License
+## 许可证
 
-*Be cool, use an open source license.*
+本项目使用 [MIT 许可证](LICENSE)。
