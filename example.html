@@ -1,22 +1,91 @@
-<!-- You might want to add additional HTML elements to ST. 
-    It's good practice to separate it out from your code -->
-<div class="example-extension-settings">
-    <div class="inline-drawer">
-        <div class="inline-drawer-toggle inline-drawer-header">
-            <b>Extension Example</b>
-            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+<div class="image-generation-settings">
+    <h3>生图功能设置</h3>
+    <input id="image_url" type="text" placeholder="输入 URL" />
+    <input id="image_api_key" type="text" placeholder="输入 API Key" />
+    <select id="available_models"></select>
+    <button id="save_image_settings">保存</button>
+    <button id="connect_image">连接</button>
+    
+    <div class="additional-settings">
+        <h4>其他设置</h4>
+        <div class="setting-item">
+            <label for="image_size">图片大小：</label>
+            <select id="image_size">
+                <option value="256">256x256</option>
+                <option value="512">512x512</option>
+                <option value="1024">1024x1024</option>
+            </select>
         </div>
-        <div class="inline-drawer-content">
-            <div class="example-extension_block flex-container">
-                <input id="my_button" class="menu_button" type="submit" value="Example Button" />
-            </div>
+        
+        <div class="setting-item">
+            <label for="generation_frequency">生成频率限制（秒）：</label>
+            <input type="number" id="generation_frequency" min="1" value="5" />
+        </div>
 
-            <div class="example-extension_block flex-container">
-                <input id="example_setting" type="checkbox" />
-                <label for="example_setting">This is an example</label>
-            </div>
+        <h4>文本截取设置</h4>
+        <div class="setting-item">
+            <label for="image_text_start">开始标记：</label>
+            <input type="text" id="image_text_start" placeholder="例如：（" value="（" />
+        </div>
+        <div class="setting-item">
+            <label for="image_text_end">结束标记：</label>
+            <input type="text" id="image_text_end" placeholder="例如：）" value="）" />
+        </div>
+    </div>
+</div>
 
-            <hr class="sysHR" />
+<div class="tts-settings">
+    <h3>语音功能设置</h3>
+    <input id="tts_url" type="text" placeholder="输入 URL" />
+    <input id="tts_api_key" type="text" placeholder="输入 API Key" />
+    <select id="tts_models"></select>
+    <select id="voice_selection"></select>
+    <button id="save_tts_settings">保存</button>
+    <button id="connect_tts">连接</button>
+    
+    <div class="additional-settings">
+        <h4>其他设置</h4>
+        <div class="setting-item">
+            <label for="playback_speed">播放速度：</label>
+            <input type="range" id="playback_speed" min="0.5" max="2" step="0.1" value="1" />
+            <span id="speed_value">1.0x</span>
+        </div>
+        
+        <div class="setting-item">
+            <label for="volume">音量：</label>
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="1" />
+            <span id="volume_value">100%</span>
+        </div>
+
+        <h4>音色上传</h4>
+        <div class="setting-item">
+            <label for="voice_model">选择模型：</label>
+            <select id="voice_model"></select>
+        </div>
+        <div class="setting-item">
+            <label for="voice_file">音频文件：</label>
+            <input type="file" id="voice_file" accept="audio/*" />
+        </div>
+        <div class="setting-item">
+            <label for="voice_text">音频文字：</label>
+            <textarea id="voice_text" placeholder="输入与音频对应的文字"></textarea>
+        </div>
+        <div class="setting-item">
+            <label for="voice_name">音色命名：</label>
+            <input type="text" id="voice_name" placeholder="为上传的音色命名" />
+        </div>
+        <button id="upload_voice">上传音色</button>
+    </div>
+    
+    <div class="additional-settings">
+        <h4>文本截取设置</h4>
+        <div class="setting-item">
+            <label for="tts_text_start">开始标记：</label>
+            <input type="text" id="tts_text_start" placeholder="例如：（" value="（" />
+        </div>
+        <div class="setting-item">
+            <label for="tts_text_end">结束标记：</label>
+            <input type="text" id="tts_text_end" placeholder="例如：）" value="）" />
         </div>
     </div>
 </div>

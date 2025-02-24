@@ -1,1 +1,115 @@
-/* All style elements for your extension go here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h3 {
+    color: #333;
+}
+
+.example-extension-settings,
+.image-generation-settings,
+.tts-settings {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+hr.sysHR {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.additional-settings {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.additional-settings h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #495057;
+}
+
+.setting-item {
+    margin-bottom: 15px;
+}
+
+.setting-item label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.setting-item input[type="range"] {
+    width: 200px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.setting-item input[type="number"] {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.setting-item span {
+    display: inline-block;
+    min-width: 45px;
+    color: #666;
+}
+
+.setting-item textarea {
+    width: calc(100% - 22px);
+    height: 80px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.setting-item input[type="file"] {
+    width: 100%;
+    padding: 5px 0;
+}
+
+#upload_voice {
+    margin-top: 15px;
+    background-color: #4a90e2;
+}
+
+#upload_voice:hover {
+    background-color: #357abd;
+} 
