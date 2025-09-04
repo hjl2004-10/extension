@@ -1,5 +1,5 @@
 {
-    "display_name": "生图与语音功能插件",
+    "display_name": "硅基流动语音插件",
     "loading_order": 1,
     "requires": [],
     "optional": [],
@@ -9,3 +9,4 @@
     "version": "1.0.0",
     "homePage": "yourUrlHere"
 }
+
